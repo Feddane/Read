@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/library"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/signup"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-4dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName|textPassword"
+        android:minHeight="48dp"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:drawableLeft="@drawable/ic_confirmation_number_black_24dp"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPersonName|textPassword"
+        android:minHeight="48dp"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/confirmPassword"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="11dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/confirmPassword"
+        android:layout_below="@+id/signup"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginTop="1dp"
+        android:text="Already have an account" />
+
+
+</RelativeLayout>
+
+
+
+
