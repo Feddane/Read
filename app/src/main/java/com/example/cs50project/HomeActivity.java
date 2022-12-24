@@ -36,10 +36,23 @@ public class HomeActivity extends AppCompatActivity implements UserAdapter.UserC
     }
 
     public void setData() {
-        userModelList.add(new UserModel(R.drawable.itendwithus,"It ends with us", " Colleen Hoover", "category: love"));
-        userModelList.add(new UserModel(R.drawable.againbutbetter,"November9", " Colleen Hoover", "category: horror"));
-        userModelList.add(new UserModel(R.drawable.wellalwayshavesummer,"Read", " Feddane Chaima", "category: history"));
-        userModelList.add(new UserModel(R.drawable.itendwithus,"It starts with us", " Colleen Hoover", "category: love"));
+        userModelList.add(new UserModel(R.drawable.itendwithus,"It ends with us", "Colleen Hoover", "Category: romance"));
+        userModelList.add(new UserModel(R.drawable.book2,"The seven husbands of eleven evelyn hugo", "Taylor Jenkins Reid", "Category: historical fiction"));
+        userModelList.add(new UserModel(R.drawable.book3,"A court of thorns and roses series", "Sarah J. Maas", "Category: fantasy"));
+        userModelList.add(new UserModel(R.drawable.book4,"The great alone", "Kristin Hannah", "Category: historical fiction"));
+        userModelList.add(new UserModel(R.drawable.book5,"Verity", "Colleen Hoover", "Category: thriller"));
+        userModelList.add(new UserModel(R.drawable.book6,"Malibu raising", "Jennifer Longo", "Category: historical fiction"));
+        userModelList.add(new UserModel(R.drawable.book7,"The invisible life of addie laRue", "V.E. Schwab", "Category: fantasy"));
+        userModelList.add(new UserModel(R.drawable.book8,"Carrie soto is back", "Lolita Hernandez", "Category: historical fiction"));
+        userModelList.add(new UserModel(R.drawable.book9,"Rock, paper, scissors", "Layne Fargo", "Category: thriller"));
+        userModelList.add(new UserModel(R.drawable.book10,"Crescent city series", "Sarah J. Maas", "Category: fantasy"));
+        userModelList.add(new UserModel(R.drawable.book11,"One true loves", "Taylor Jenkins Reid", "Category: romance"));
+        userModelList.add(new UserModel(R.drawable.book12,"The silent patient", "Alex Michaelides", "Category: thriller"));
+        userModelList.add(new UserModel(R.drawable.book13,"We are Brennans", "Carlene Bauer", "Category: fiction"));
+        userModelList.add(new UserModel(R.drawable.book14,"The inheritance games series", "Jennifer Lynn Barnes", "Category: fiction"));
+        userModelList.add(new UserModel(R.drawable.book15,"Daisy Jones and the six", "Taylor Jenkins Reid", "Category: historical fiction"));
+        userModelList.add(new UserModel(R.drawable.book16,"The prisoner", "B.A Paris", "Category: thriller"));
+        userModelList.add(new UserModel(R.drawable.book18,"Luckiest girl", "Jessica Koll", "Category: thriller"));
     }
 
 
