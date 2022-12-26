@@ -1,6 +1,7 @@
 package com.example.cs50project;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -102,12 +103,20 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserAdapterVh>
         holder.image.setImageResource(userModel.getImage());
         holder.category.setText(category);
 
-
-
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                userClickListener.selectedUser(userModel);
+
+
+
+                Intent intent = new Intent(v.getContext(), SelectedUserActivity.class);
+                intent.putExtra("booksimg", userModel.getImage());
+                intent.putExtra("title", userModel.getTitle());
+                intent.putExtra("Category", userModel.getCategory());
+                intent.putExtra("Pages", userModel.getPages());
+                intent.putExtra("Date", userModel.getDate());
+                intent.putExtra("description", userModel.getDescription());
+                v.getContext().startActivity(intent);
             }
         });
 
