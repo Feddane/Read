@@ -15,8 +15,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.ArrayList;
 
 public class Experience extends AppCompatActivity {
-
-    private static final String TAG = "ExperienceAdapter";
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<Integer> mImageUrls = new ArrayList<Integer>();
     TextInputEditText inputEditText;
@@ -46,8 +44,6 @@ public class Experience extends AppCompatActivity {
 
 
     private void getImages(){
-        Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
-
         mImageUrls.add(R.drawable.inlove);
         mNames.add("In love");
 
@@ -70,8 +66,6 @@ public class Experience extends AppCompatActivity {
     }
 
     private void initRecyclerView(){
-        Log.d(TAG, "initRecyclerView: init recyclerview");
-
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(layoutManager);

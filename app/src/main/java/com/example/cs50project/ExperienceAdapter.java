@@ -17,9 +17,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ExperienceAdapter extends RecyclerView.Adapter<ExperienceAdapter.ViewHolder> {
-
-    private static final String TAG = "ExperienceAdapter";
-
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<Integer> mImageUrls = new ArrayList<Integer>();
     private Context mContext;
@@ -40,8 +37,6 @@ public class ExperienceAdapter extends RecyclerView.Adapter<ExperienceAdapter.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Log.d(TAG, "onBindViewHolder: called.");
-
         Glide.with(mContext)
                 .asBitmap()
                 .load(mImageUrls.get(holder.getAdapterPosition()))
@@ -52,7 +47,6 @@ public class ExperienceAdapter extends RecyclerView.Adapter<ExperienceAdapter.Vi
         holder.im.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(TAG, "onClick: clicked on an image: " + mNames.get(holder.getAdapterPosition()));
                 Toast.makeText(mContext, mNames.get(holder.getAdapterPosition()), Toast.LENGTH_SHORT).show();
             }
         });
