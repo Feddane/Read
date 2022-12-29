@@ -28,6 +28,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserAdapterVh>
     public List<UserModel> getUserModelListFilter = new ArrayList<>();
     public Context context;
     public UserClickListener userClickListener;
+    ImageView done;
 
     public UserAdapter(List<UserModel> userModels, Context context, UserClickListener userClickListener){
         this.userModelList = userModels;
@@ -84,6 +85,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserAdapterVh>
         Context context = parent.getContext();
         View view = LayoutInflater.from(context).inflate(R.layout.row_users,parent,false);
         return new UserAdapterVh(view);
+
     }
 
     @Override
@@ -102,6 +104,14 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserAdapterVh>
         holder.title.setText(title);
         holder.image.setImageResource(userModel.getImage());
         holder.category.setText(category);
+
+        holder.done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Experience.class);
+                view.getContext().startActivity(intent);
+            }
+        });
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,7 +142,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserAdapterVh>
         CardView cardView;
         private TextView title;
         private TextView author;
-        private ImageView image;
+        private ImageView image, done;
         private TextView category;
 
 
@@ -143,10 +153,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserAdapterVh>
             author = itemView.findViewById(R.id.author);
             image = itemView.findViewById(R.id.img);
             category = itemView.findViewById(R.id.category);
+            done = itemView.findViewById(R.id.done);
 
         }
     }
 
 
 }
-

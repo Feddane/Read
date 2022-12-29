@@ -27,9 +27,16 @@
             android:layout_height="wrap_content">
 
 
+            <ImageView
+                android:id="@+id/done"
+                android:layout_width="34dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/tick_icon" />
             <TextView
                 android:id="@+id/title"
-                android:layout_width="match_parent"
+                android:layout_width="259dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"
                 android:text="Title"
@@ -39,7 +46,7 @@
 
             <TextView
                 android:id="@+id/author"
-                android:layout_width="match_parent"
+                android:layout_width="226dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title"
                 android:layout_marginLeft="90dp"
@@ -56,8 +63,6 @@
                 android:text="category"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
-
         </RelativeLayout>
 
 
