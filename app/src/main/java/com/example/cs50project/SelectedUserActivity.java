@@ -36,11 +36,5 @@ public class SelectedUserActivity extends AppCompatActivity {
         int booksimg = getIntent().getIntExtra("booksimg", 0);
         image.setImageResource(booksimg);
 
-
-
-
-
-
-
     }
 }
