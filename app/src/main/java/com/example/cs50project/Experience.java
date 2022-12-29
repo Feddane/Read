@@ -29,8 +29,6 @@ public class Experience extends AppCompatActivity {
 
         textView = findViewById(R.id.soustitre);
         inputEditText = findViewById(R.id.textInputEditText);
-//        inputEditText.setShowSoftInputOnFocus(false);
-
 
         getImages();
     }
@@ -42,6 +40,7 @@ public class Experience extends AppCompatActivity {
             return;
         }
         Toast.makeText(this, "Thank you 😊", Toast.LENGTH_SHORT).show();
+        inputEditText.setText(null);
 
     }
 
