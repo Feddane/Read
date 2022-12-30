@@ -8,7 +8,7 @@ Read, a simple android mobile application.
 ## Demo
 
 Click on Read to see the Demo...
-[Read](https://www.youtube.com/)
+[Read](https://youtu.be/4_V93xTuIqQ)
 
 ![Read](app/src/main/res/drawable-xxxhdpi/logo.png)
 
