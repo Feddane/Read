@@ -12,6 +12,9 @@ Click on Read to see the Demo...
 
 ![Read](app/src/main/res/drawable-xxxhdpi/logo.png)
 
+## Try it
+[Here!](https://www.mediafire.com/file/iys0nfypm16w7t1/Read.apk/file)
+
 ## Description
 Read is an Android mobile application that allows users to discover new books based on their interests and preferences.
 
